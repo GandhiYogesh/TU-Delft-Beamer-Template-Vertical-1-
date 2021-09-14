@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.9)  13 SEP 2021 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.14)  14 SEP 2021 18:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/presentation.tex
-(/home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/presentation.tex
+**/mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/presentation.tex
+(/mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/presentation.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -867,7 +867,7 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \tikz@expandcount=\count179
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-))) (/home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/beamerthemetud.sty (/home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/beamerfontthemetud.sty) (/home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/beamercolorthemetud.sty) (/home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/beamerinnerthemetud.sty) (/home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/beamerouterthemetud.sty)) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+))) (/mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/beamerthemetud.sty (/mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/beamerfontthemetud.sty) (/mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/beamercolorthemetud.sty) (/mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/beamerinnerthemetud.sty) (/mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/beamerouterthemetud.sty)) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2017/12/19 v3.10 programmable bibliographies (PK/JW/AB)
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
@@ -1091,7 +1091,7 @@ Package biblatex Warning: Conflicting options.
 (biblatex)                '<namepart>inits' conflicts with 'uniquename=full'.
 (biblatex)                Setting 'uniquename=init' on input line 38.
 
-(/home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/presentation.aux)
+(/mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/presentation.aux)
 \openout1 = `presentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
@@ -1186,7 +1186,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 38.
 LaTeX Info: Redefining \pageref on input line 38.
 LaTeX Info: Redefining \nameref on input line 38.
- (/home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/presentation.out) (/home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/presentation.out)
+ (/mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/presentation.out) (/mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/presentation.out)
 \@outlinefile=\write8
 \openout8 = `presentation.out'.
 
@@ -1266,10 +1266,10 @@ Package biblatex Info: Data encoding 'ascii' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'presentation.bbl' found.
- (/home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/presentation.bbl)
+ (/mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/presentation.bbl)
 Package biblatex Info: Reference section=0 on input line 38.
 Package biblatex Info: Reference segment=0 on input line 38.
- (/home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/presentation.nav)
+ (/mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/presentation.nav)
 <tud_white.pdf, id=13, 101.19305pt x 40.43105pt>
 File: tud_white.pdf Graphic file (type pdf)
 <use tud_white.pdf>
@@ -1330,7 +1330,7 @@ Package pdftex.def Info: tud_white.pdf  used on input line 41.
 (pdftex.def)             Requested size: 24.18501pt x 9.66292pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/tud_white.pdf>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/tud_white.pdf>]
 <./Schematics/GTO_FRC.pdf, id=31, 614.295pt x 794.97pt>
 File: ./Schematics/GTO_FRC.pdf Graphic file (type pdf)
 <use ./Schematics/GTO_FRC.pdf>
@@ -1380,7 +1380,7 @@ Package pdftex.def Info: tud_white.pdf  used on input line 65.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
- (/home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/presentation.aux)
+ (/mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/presentation.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
@@ -1396,14 +1396,14 @@ Package logreq Info: Writing requests to 'presentation.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  30952 strings out of 492982
- 584319 string characters out of 6134897
- 997456 words of memory out of 5000000
+ 585129 string characters out of 6134896
+ 997453 words of memory out of 5000000
  33863 multiletter control sequences out of 15000+600000
  28994 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,19n,72p,855b,1586s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,72p,885b,1586s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-Output written on /home/yoshi/TU-Delft-Beamer-Template-Vertical-1-/presentation.pdf (3 pages, 97816 bytes).
+Output written on /mnt/c/Users/ygandhi1/TechanicalReporting/TU-Delft-Beamer-Template-Vertical-1-/presentation.pdf (3 pages, 97960 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  73 compressed objects within 1 object stream
