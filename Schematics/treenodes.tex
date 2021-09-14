@@ -48,7 +48,8 @@ Full explanation in Chapter 9, Creating Graphics:
                     edge from parent node [above]{FEA on $\Omega^{\tau}$}}}
                 edge from parent node [above] {No}}}
             edge from parent node [above] {FEA on $\Omega^{m}$} };
-\draw[->] (F)..controls +(south:1) and +(south:2)..(B);
-\draw[->] (F)..controls +(north:1) and +(north:2)..(D);
+\draw[->] (F)edge[bend left] node[midway, color=green, fill=white]{Yes}(B);
+\draw[->] (F) edge[bend left] node[midway, color=red, fill=white]{No}(D);
+\draw[->] (E) edge[bend right] node[midway, color=blue, fill=white]{FE analysis} (A);
 \end{tikzpicture}
 \end{document}
