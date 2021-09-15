@@ -5,15 +5,10 @@
 \begin{comment}
 :Title: Decision tree
 :Tags: Trees;Graphics;TikZ
-:Author: Stefan Kottwitz
-:Slug: decision-tree
 
 A horizontal tree, growing to the right.
 I created a basic style for tree nodes, and
 derived styles for specific kinds of nodes.
-
-Full explanation in Chapter 9, Creating Graphics:
-[Growing a tree](https://latex-cookbook.net/tree/)
 \end{comment}
 \usepackage{tikz}
 \tikzset{
@@ -32,24 +27,28 @@ Full explanation in Chapter 9, Creating Graphics:
   [
     grow                    = right,
     sibling distance        = 5em,
-    level distance          = 8em,
+    level distance          = 6em,
     edge from parent/.style = {draw, -latex},
     every node/.style       = {font=\footnotesize},
     sloped
   ]
-  \node [root] (P){$\Omega^{m}=\Omega$\\$\Omega^{b}=0$ \\ $\Delta\Omega^{b}=1$}
-    child { node [root, right=0.2] (A) {$min_{\theta}\mathcal{T}(\theta)$; \\ Compute $\psi$}
-      child { node [dummy, left =0.8] (B) {$\Omega^{b}=\Omega^{b*}$}
-        child { node [env, left =0.8] (C) {$\Omega^{b}++$}
-            child{ node [env, left =0.8] (D) {$\mathcal{T}-\tau <0,$\\$|\Omega^{f}|=\Omega^{b}$}
-                child{ node [env, right =0.8] (E) {$\Omega^{\tau}=\Omega^{m}\cup\Omega^{b}$\\
-                Compute $\mathcal{T}(\theta)$}
-                    child{ node [env] (F) {Check \\ $min_{\theta}\mathcal{T}(\theta)$} }
-                    edge from parent node [above]{FEA on $\Omega^{\tau}$}}}
-                edge from parent node [above] {No}}}
-            edge from parent node [above] {FEA on $\Omega^{m}$} };
-\draw[->] (F)edge[bend left] node[midway, color=green, fill=white]{Yes}(B);
-\draw[->] (F) edge[bend left] node[midway, color=red, fill=white]{No}(D);
-\draw[->] (E) edge[bend right] node[midway, color=blue, fill=white]{FE analysis} (A);
+
+  \node [root] (P1){$\Omega^{m}=\Omega$\\$\Omega^{b}=0$}
+  child { node [root] (A) {$\rho_{be}$}
+      child { node [root] (B) {$\Omega^{\tau}=\Omega^{m}\cup\Omega^{b}$\\
+              Compute $\mathcal{T}(\theta)$}
+          child { node [dummy] (C) {$\Omega^{f}=\Omega^{b}$?}
+              child{ node [env] (D) {$\Omega^{b}++$}
+                  edge from parent node [above] {No}}
+              child{ node [env] (E) {Update $z_{i}$}
+                  child{ node [env] (F) {$\sigma_{i-1}\leq\sigma_{i}$}
+                      child { node [dummy, color=red] (G) {STOP}
+                          edge from parent node [above] {Yes}}
+                      child { node [env] (H) {$\mathcal{T}-\tau<0$,\\$|\Omega^{f}|=\Omega^{b}$}
+                          edge from parent node [above] {No}}}
+                  edge from parent node [above] {Yes}}}}
+      edge from parent node [above] {$\Delta\Omega^{b}$} };
+  \draw[->] (D) edge[bend left] node[midway, color=blue, fill=white]{projection} (A);
+  \draw[->] (H) edge[bend right] node[midway, color=blue, fill=white]{?} (B);
 \end{tikzpicture}
 \end{document}
