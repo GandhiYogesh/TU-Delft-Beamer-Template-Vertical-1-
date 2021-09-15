@@ -54,33 +54,40 @@ Topology Optimization for Fiber-Reinforced Composites}
     \end{figure}
 \end{frame}
 
-\begin{frame}{Topological }
-    Computing Topological sensitivity field to locate optimal fiber
-    \begin{equation*}
-        \psi(\Omega)=\frac{1}{2}\int_{\Omega}\sigma(\mathbf{u})
-        \cdot\varepsilon(\mathbf{u})
-    \end{equation*}
-    \begin{equation*}
-        TD(\hat{x}) = \underset{\epsilon\rightarrow 0}{\text{lim}}
-        \frac{\psi_{\epsilon}(\Omega)-\psi(\Omega)}{f(\epsilon )}
-    \end{equation*}
-\end{frame}
+% \begin{frame}{Topological }
+%     Computing Topological sensitivity field to locate optimal fiber
+%     \begin{equation*}
+%         \psi(\Omega)=\frac{1}{2}\int_{\Omega}\sigma(\mathbf{u})
+%         \cdot\varepsilon(\mathbf{u})
+%     \end{equation*}
+%     \begin{equation*}
+%         TD(\hat{x}) = \underset{\epsilon\rightarrow 0}{\text{lim}}
+%         \frac{\psi_{\epsilon}(\Omega)-\psi(\Omega)}{f(\epsilon )}
+%     \end{equation*}
+% \end{frame}
 
-\begin{frame}{Algorithm}
+\begin{frame}{Two phases topological derivatives}
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=1\textwidth]{./Schematics/treenodes.pdf}
         \label{fig:treenode}
     \end{figure}
     \begin{enumerate}
-        \item Initilaized $\Omega^{m}=\Omega$
-        \item $\Omega^{b}++ \Rightarrow \rho_{be}$;
-              Compute $\mathcal{T}(\theta)\circumeq \psi$
+        \item Initilaized $\Omega^{m}=\Omega$ and $\rho_{be}$
+        \item Compute $\mathcal{T}(\theta)\circumeq \psi$
+              \begin{itemize}
+                  \item Generate topological sensitivity field for incorporating fiber inclusions.
+                  \item $\rho_{be}$ considered as single entity
+              \end{itemize}
         \item Check desired fiber fraction
-              \begin{enumerate}
-                  \item $\Omega^{b}++ \Rightarrow \rho_{be}$
-              \end{enumerate}
+              \begin{itemize}
+                  \item $\Omega^{b}++ \Rightarrow \rho_{be}$;
+                  \item Check convergence
+              \end{itemize}
     \end{enumerate}
 \end{frame}
 
+\begin{frame}
+
+\end{frame}
 \end{document}
