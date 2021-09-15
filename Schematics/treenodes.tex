@@ -34,7 +34,8 @@ derived styles for specific kinds of nodes.
   ]
 
   \node [root] (P1){$\Omega^{m}=\Omega$\\$\Omega^{b}=0$}
-  child { node [root] (A) {$\rho_{be}$}
+  child { node [env] (A1) {$\Omega^{m}$}}
+  child { node [env] (A) {$\rho_{be}$}
       child { node [root] (B) {$\Omega^{\tau}=\Omega^{m}\cup\Omega^{b}$\\
               Compute $\mathcal{T}(\theta)$}
           child { node [dummy] (C) {$\Omega^{f}=\Omega^{b}$?}
@@ -50,5 +51,6 @@ derived styles for specific kinds of nodes.
       edge from parent node [above] {$\Delta\Omega^{b}$} };
   \draw[->] (D) edge[bend left] node[midway, color=blue, fill=white]{projection} (A);
   \draw[->] (H) edge[bend right] node[midway, color=blue, fill=white]{?} (B);
+  \draw[->] (A1) edge[bend right] (B);
 \end{tikzpicture}
 \end{document}
