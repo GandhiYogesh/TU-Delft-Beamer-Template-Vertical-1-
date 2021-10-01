@@ -1,0 +1,11 @@
+VecCreateSeq
+VecCreateMPI
+PETSCDECIDE
+PETSCCOMMSELF
+PetscInt
+Vec
+PETSCDETERMINE
+VecAssemblyBegin
+VecAssemblyEnd
+PETSc
+VecCreateMPIwithArray

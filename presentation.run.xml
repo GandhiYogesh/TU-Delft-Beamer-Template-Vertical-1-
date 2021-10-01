@@ -55,8 +55,8 @@
       <file>blx-compat.def</file>
       <file>blx-bibtex.def</file>
       <file>biblatex.def</file>
-      <file>authoryear.bbx</file>
       <file>standard.bbx</file>
+      <file>authoryear.bbx</file>
       <file>authoryear.cbx</file>
       <file>biblatex.cfg</file>
       <file>english.lbx</file>
@@ -83,7 +83,7 @@
       <file>presentation-blx.bib</file>
     </requires>
     <requires type="editable">
-      <file>bibfile.bib</file>
+      <file>library.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>

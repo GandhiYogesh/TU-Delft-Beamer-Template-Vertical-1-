@@ -1,0 +1,88 @@
+\documentclass[tikz]{standalone}
+
+%
+% This is a direct copy of the codes in section 2.9 of the package
+% documentation (See page 45) https://mirrors.tuna.tsinghua.edu.cn/CTAN/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf 
+% except the color setting
+
+
+\usepackage{pgfgantt}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+
+\definecolor{barblue}{RGB}{153,204,254}
+\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{linkred}{RGB}{165,0,33} 
+
+\begin{document}
+\begin{ganttchart}[
+        y unit title=0.4cm,
+        y unit chart=0.5cm,
+        vgrid,
+        time slot format=isodate-yearmonth,
+        title/.append style={draw=none, fill=barblue},
+        title label font=\sffamily\bfseries\color{white},
+        title label node/.append style={below=-1.6ex},
+        title left shift=.05,
+        title right shift=-.05,
+        title height=1,
+        bar/.append style={draw=none, fill=groupblue, rounded corners=1.5mm},
+        bar height=.6,
+        bar label font=\normalsize\color{black!50},
+        group right shift=0,
+        group top shift=.6,
+        group height=.3,
+        group peaks height=.2,
+        bar incomplete/.append style={fill=green}
+    ]{2021-5}{2022-12}
+
+    \gantttitlecalendar{year}\\
+    \ganttbar[
+        progress=100,
+        bar progress label font=\small\color{barblue},
+        bar progress label node/.append style={right=4pt},
+        bar label font=\normalsize\color{barblue},
+        name=rl
+    ]{Research Literature}{2021-5}{2021-5} \\
+
+    \ganttbar[
+        progress=70,
+        bar progress label font=\small\color{barblue},
+        bar progress label node/.append style={right=4pt},
+        bar label font=\normalsize\color{barblue},
+        name=ra
+    ]{Review Article}{2021-6}{2021-12} \\
+
+    \ganttbar[
+        progress=100,
+        bar progress label font=\small\color{barblue},
+        bar progress label node/.append style={right=4pt},
+        bar label font=\normalsize\color{barblue},
+        name=rs
+    ]{Research Strategy Definition}{2021-6}{2021-09} \\
+
+    \ganttset{progress label text={}, link/.style={black, -to}}
+    \ganttgroup{Objective 1}{2021-08}{2022-06} \\
+    \ganttbar[progress=10, name=T1A]{Concurrent GTO + LSTO}{2021-09}{2022-04} \\
+    \ganttbar[progress=20, name=T1B]{CGPLSTO Topological Derivatives}{2021-08}{2022-06} \\
+    \ganttbar[progress=0]{SOM Article}{2022-02}{2022-06} \\
+    \ganttgroup{Objective 2}{2022-04}{2022-11} \\
+    \ganttbar[progress=0, name=T2A]{Additive Manufacturing}{2022-05}{2022-10} \\
+    \ganttbar[progress=0, name =T2B]{CGTO for AM}{2022-04}{2022-08} \\
+    \ganttbar[progress=0, name=T2C]{Article ??}{2022-08}{2022-11} \\
+
+    \ganttgroup{Objective 3}{2021-06}{2022-11} \\
+    \ganttbar[progress=5]{Dissertation}{2021-06}{2022-11}
+
+    \ganttset{link/.style={thick, ->, green!50!black, rounded corners=1mm},
+        link label anchor/.style=below, link label font=\small\bfseries}
+    \ganttlink[link mid=.4]{rs}{T1A}
+    \ganttlink[link mid=.25]{rs}{T1B}
+    \ganttlink{rl}{ra}
+    \ganttlink[link mid=0.25]{rl}{rs}
+    \ganttset{link/.style={thick, <->, green!50!black, rounded corners=1mm},
+        link label anchor/.style=below, link label font=\small\bfseries}
+    \ganttlink[link mid=.5]{T2B}{T2A}
+    \ganttlink[link mid=.5]{T2A}{T2B}
+\end{ganttchart}
+\end{document}
